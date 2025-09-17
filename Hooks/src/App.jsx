@@ -1,4 +1,6 @@
 import UserData from "./custom-hooks/userData";
+import WithLiftingStateUp from "./liftingStateUp/WithLiftingStateUp";
+import WithoutLiftingStateUp from "./liftingStateUp/WithoutLiftingStateUp";
 import FilterUserWithCallback from "./useCallback/FilterUserWithCallback";
 import FilterUser from "./useMemo/FilterUser";
 import PreviousCounter from "./useRef/PreviousCounter";
@@ -13,7 +15,11 @@ const App = () => {
       {/* <FilterUser/> */}
       {/* <FilterUserWithCallback/> */}
 
-      <UserData/>
+      {/* <UserData/> */}
+
+      {/* will get error */}
+      {/* <WithoutLiftingStateUp/>  */}
+      <WithLiftingStateUp/>
     </>
   )
 };
