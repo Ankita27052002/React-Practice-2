@@ -8,6 +8,8 @@ import FilterUser from "./useMemo/FilterUser";
 import PreviousCounter from "./useRef/PreviousCounter";
 import Home from "./react-router/Home";
 import About from "./react-router/About";
+import ControlledComponent from "./controlled-uncontrolled-components/ControlledComponent";
+import UncontrolledComponent from "./controlled-uncontrolled-components/UncontrolledComponent";
 
 
 const App = () => {
@@ -45,7 +47,14 @@ const App = () => {
           <Route path="/about" element={<About/>}/>
         </Routes>
       </BrowserRouter>
+
+      {/* controlled and uncontrolled component example */}
+      <ControlledComponent/>
+      <UncontrolledComponent/>
     </>
+
+
+      
   );
 };
 
